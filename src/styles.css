@@ -269,4 +269,14 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+
+  ::selection {
+    background: #f5d678;
+    color: #0f172a;
+  }
+
+  ::-moz-selection {
+    background: #f5d678;
+    color: #0f172a;
+  }
 }
