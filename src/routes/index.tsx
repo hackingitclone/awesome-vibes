@@ -37,12 +37,13 @@ const WHITELIST_BACKGROUND =
   "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/whitelistpage.png";
 
 const CENTER_PREVIEW = "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_mixed_100.gif";
+const FOUR_FRAMES = fourframesImage.url;
 
 const SIDE_FRAMES = [
-  { backdrop: "nft-backdrop-ivory", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_arc_backgound_100.gif" },
-  { backdrop: "nft-backdrop-slate", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_magma_burst_100.gif" },
-  { backdrop: "nft-backdrop-sky", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_sky_blue_100.gif" },
-  { backdrop: "nft-backdrop-sand", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_slate_gray_100.gif" },
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_arc_backgound_100.gif",
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_magma_burst_100.gif",
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_sky_blue_100.gif",
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_slate_gray_100.gif",
 ] as const;
 
 function StateBackground({ isWhitelist }: { isWhitelist: boolean }) {
