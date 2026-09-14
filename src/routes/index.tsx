@@ -155,13 +155,16 @@ function Index() {
       {/* Content — fills the available viewport above the footer */}
       <div className="relative z-10 flex min-h-[540px] flex-1 flex-col items-center justify-center px-4 py-5">
         {view === "home" ? (
-          <section key="home" className="state-enter mx-auto flex h-full w-full max-w-3xl translate-y-10 flex-col items-center justify-center pt-40 text-center sm:translate-y-0 sm:pt-48">
+          <section key="home" className="state-enter mx-auto flex h-full w-full max-w-3xl -translate-y-12 flex-col items-center justify-center pt-24 text-center sm:-translate-y-16 sm:pt-28">
             <h1 className="sr-only">ARCSultans</h1>
             <img
               src={homeFrontTextImage.url}
               alt="ARCSultans"
-              className="w-full max-w-xl object-contain [image-rendering:pixelated] sm:max-w-2xl"
+              className="w-full max-w-lg object-contain [image-rendering:pixelated] sm:max-w-xl"
             />
+            <p className="mt-4 max-w-2xl font-display text-sm font-bold leading-7 text-footer-title [text-shadow:0_2px_0_var(--background),0_0_10px_color-mix(in_oklab,var(--footer-title)_30%,transparent)] sm:text-lg sm:leading-8">
+              999 Sultans arriving on ARC.<br />Claim your throne before the gates close.
+            </p>
             <Button
               size="lg"
               onClick={() => setView("whitelist")}
