@@ -122,8 +122,8 @@ function Index() {
       {/* Top corner badges — left & right */}
       <div className="pointer-events-none fixed inset-x-0 top-0 z-30 flex items-start justify-between px-4 py-3 sm:px-6 sm:py-4">
         <div className="pl-2.5 sm:pl-3">
-          <p className="font-display text-[9px] font-bold uppercase leading-4 text-footer-title sm:text-[10px]">✦ ARC NETWORK</p>
-          <p className="mt-0.5 font-display text-[8px] uppercase leading-[1.4] text-footer-copy/70 sm:text-[9px]">
+          <p className="font-display text-[9px] font-bold uppercase leading-4 text-footer-title sm:text-[10px]">✦ ARC MAINNET</p>
+          <p className="mt-0.5 pl-2 font-display text-[8px] uppercase leading-[1.4] text-footer-copy/70 sm:text-[9px]">
             DESERTS<br />DYNASTY<br />ONCHAIN
           </p>
         </div>
@@ -269,7 +269,7 @@ function Index() {
         <div className="mx-auto grid w-full max-w-[1536px] gap-x-8 gap-y-5 px-5 py-5 sm:px-8 lg:grid-cols-[minmax(190px,1fr)_minmax(360px,2fr)_auto] lg:items-center lg:px-10 lg:py-4">
           <div className="min-w-0">
             <p className="brand-title truncate text-xl leading-none sm:text-2xl">ARCSultans</p>
-            <p className="mt-2 text-[9px] leading-4 text-footer-copy sm:text-[10px]">Mint 16 September 2026 · Arc network</p>
+            <p className="mt-2 text-[9px] leading-4 text-footer-copy sm:text-[10px]">Mint 16 September 2026 · ARC MAINNET</p>
           </div>
 
           <div className="min-w-0 lg:px-5">
