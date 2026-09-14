@@ -205,7 +205,7 @@ function Index() {
                   <img
                     src={MAIN_FRAME}
                     alt=""
-                    className="absolute inset-0 h-full w-full object-contain [image-rendering:pixelated]"
+                    className="absolute left-1/2 top-1/2 h-[250%] w-[250%] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain [image-rendering:pixelated]"
                   />
                   <span className="absolute left-2 top-2 z-20 bg-background px-1.5 py-0.5 font-display text-[7px] text-accent">LIVE PREVIEW</span>
                 </div>
