@@ -11,7 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { WhitelistForm } from "@/components/WhitelistForm";
-import whitelistBanner from "@/assets/banner.svg.asset.json";
+import whitelistBanner from "@/assets/banner-stretched.svg.asset.json";
 import homepageBackground from "@/assets/homepage-2.png.asset.json";
 import nft1 from "@/assets/nft-1.jpg";
 import nft2 from "@/assets/nft-2.jpg";
