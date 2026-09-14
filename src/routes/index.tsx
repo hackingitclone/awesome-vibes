@@ -13,6 +13,7 @@ import {
 import { WhitelistForm } from "@/components/WhitelistForm";
 import buttonBackground from "@/assets/button-4k.png.asset.json";
 import homepageBackground from "@/assets/homepage.png.asset.json";
+import homeFrontTextImage from "@/assets/home-fronttext.png.asset.json";
 import footerBrandImage from "@/assets/ARCSULTANSfootertext.png.asset.json";
 import nft1 from "@/assets/nft-1.jpg";
 import nft2 from "@/assets/nft-2.jpg";
