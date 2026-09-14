@@ -165,7 +165,7 @@ function Index() {
               className="group mt-5 h-9 w-full max-w-[250px] border-0 bg-primary px-2 font-display text-xs font-bold text-footer-title shadow-none hover:bg-primary/90 sm:h-10 sm:text-sm"
             >
               <span aria-hidden className="mr-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
-              Enter Whitelist
+              CLAIM YOUR THRONE
               <span aria-hidden className="ml-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
             </Button>
           </section>
