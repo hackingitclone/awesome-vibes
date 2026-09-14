@@ -145,16 +145,16 @@ function Index() {
       {isWhitelist && (
         <>
           <div className="fixed left-40 top-20 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[0].backdrop} gif={SIDE_FRAMES[0].gif} slot={0} />
+            <SideGifPreview gif={SIDE_FRAMES[0]} slot={0} />
           </div>
           <div className="fixed bottom-32 left-40 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[1].backdrop} gif={SIDE_FRAMES[1].gif} slot={1} />
+            <SideGifPreview gif={SIDE_FRAMES[1]} slot={1} />
           </div>
           <div className="fixed right-40 top-20 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[2].backdrop} gif={SIDE_FRAMES[2].gif} slot={2} />
+            <SideGifPreview gif={SIDE_FRAMES[2]} slot={2} />
           </div>
           <div className="fixed bottom-32 right-40 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[3].backdrop} gif={SIDE_FRAMES[3].gif} slot={3} />
+            <SideGifPreview gif={SIDE_FRAMES[3]} slot={3} />
           </div>
         </>
       )}
