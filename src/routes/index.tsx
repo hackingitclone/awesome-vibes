@@ -11,6 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { WhitelistForm } from "@/components/WhitelistForm";
+import homepageBackground from "@/assets/homepage-2.png.asset.json";
 import nft1 from "@/assets/nft-1.jpg";
 import nft2 from "@/assets/nft-2.jpg";
 import nft3 from "@/assets/nft-3.jpg";
@@ -19,8 +20,7 @@ import nft5 from "@/assets/nft-5.jpg";
 import nft6 from "@/assets/nft-6.jpg";
 const SLIDES = [nft1, nft2, nft3, nft4, nft5, nft6];
 
-const HOME_BACKGROUND =
-  "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/homepage.png";
+const HOME_BACKGROUND = homepageBackground.url;
 const WHITELIST_BACKGROUND =
   "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/whitelistpage.png";
 
@@ -50,7 +50,7 @@ function StateBackground({ isWhitelist }: { isWhitelist: boolean }) {
           isWhitelist ? "opacity-100" : "opacity-0"
         }`}
       />
-      <div className="absolute inset-0 bg-background/45" />
+      <div className={`absolute inset-0 bg-background ${isWhitelist ? "opacity-45" : "opacity-10"}`} />
     </div>
   );
 }
@@ -144,17 +144,19 @@ function Index() {
       {/* Content — fills the available viewport above the footer */}
       <div className="relative z-10 flex min-h-[540px] flex-1 flex-col items-center justify-center px-4 py-5">
         {view === "home" ? (
-          <section key="home" className="state-enter mx-auto flex w-full max-w-3xl flex-col items-center justify-center text-center">
-            <h1 className="brand-title text-4xl sm:text-6xl">ARCSultans</h1>
-            <p className="mt-6 max-w-2xl font-display text-sm leading-7 text-foreground sm:text-lg">
-              999 Sultans arriving on ARC. Claim your throne before the gates close.
+          <section key="home" className="state-enter mx-auto flex h-full w-full max-w-3xl translate-y-10 flex-col items-center justify-center pt-40 text-center sm:translate-y-0 sm:pt-48">
+            <h1 className="sr-only">ARCSultans</h1>
+            <p className="max-w-2xl font-display text-sm font-bold leading-7 text-footer-title [text-shadow:0_2px_0_var(--background),0_0_10px_color-mix(in_oklab,var(--footer-title)_30%,transparent)] sm:text-lg sm:leading-8">
+              999 Sultans arriving on ARC.<br />Claim your throne before the gates close.
             </p>
             <Button
               size="lg"
               onClick={() => setView("whitelist")}
-              className="mt-8 h-16 w-full max-w-sm border-0 border-b-8 border-secondary bg-primary px-4 font-display text-sm font-bold text-primary-foreground shadow-none hover:bg-primary/90 active:translate-y-2 active:border-b-0 sm:text-lg"
+              className="group mt-5 h-14 w-full max-w-sm border-4 border-footer-title bg-primary px-3 font-display text-sm font-bold text-footer-title shadow-[0_5px_0_var(--secondary),0_0_14px_color-mix(in_oklab,var(--footer-title)_30%,transparent)] hover:bg-primary/90 active:translate-y-1 active:shadow-[0_1px_0_var(--secondary)] sm:h-16 sm:text-lg"
             >
+              <span aria-hidden className="mr-5 text-base transition-transform group-hover:rotate-45">✦</span>
               Enter Whitelist
+              <span aria-hidden className="ml-5 text-base transition-transform group-hover:rotate-45">✦</span>
             </Button>
           </section>
         ) : view === "whitelist" ? (
