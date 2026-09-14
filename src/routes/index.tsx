@@ -118,7 +118,7 @@ function Index() {
   const isWhitelist = view === "whitelist";
 
   return (
-    <main id="top" className="relative flex min-h-dvh flex-col overflow-hidden bg-background selection:bg-accent selection:text-accent-foreground">
+    <main id="top" className="relative flex min-h-dvh flex-col overflow-hidden bg-background">
       <StateBackground isWhitelist={isWhitelist} />
 
       {/* Top corner badges — left & right */}
