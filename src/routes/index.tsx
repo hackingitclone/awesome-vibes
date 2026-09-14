@@ -38,6 +38,7 @@ const WHITELIST_BACKGROUND =
   "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/whitelistpage.png";
 
 const CENTER_PREVIEW = "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_mixed_100.gif";
+const MAIN_FRAME = mainframeImage.url;
 const FOUR_FRAMES = fourframesImage.url;
 
 const SIDE_FRAMES = [
