@@ -181,6 +181,25 @@
   box-shadow: 8px 8px 0 var(--background), 0 0 0 4px var(--secondary), 0 0 26px color-mix(in oklab, var(--accent) 22%, transparent);
 }
 
+/* Brand title — "ARCSultans" only. Gold metallic gradient + warm glow. */
+@utility brand-title {
+  font-family: "Aladin", "Cinzel Decorative", system-ui, serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  background-image: linear-gradient(
+    to bottom,
+    #f5d678 0%,
+    #e3b341 45%,
+    #b8860b 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 12px rgb(255 200 90 / 0.35))
+    drop-shadow(0 0 26px rgb(212 160 23 / 0.18));
+}
+
 @utility nft-backdrop-ivory {
   background-color: var(--nft-backdrop-ivory);
 }
