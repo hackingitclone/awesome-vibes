@@ -145,7 +145,7 @@ function Index() {
       <div className="relative z-10 flex min-h-[540px] flex-1 flex-col items-center justify-center px-4 py-5">
         {view === "home" ? (
           <section key="home" className="state-enter mx-auto flex w-full max-w-3xl flex-col items-center justify-center text-center">
-            <h1 className="font-display text-4xl font-extrabold text-accent sm:text-6xl">ARCSultans</h1>
+            <h1 className="brand-title text-4xl sm:text-6xl">ARCSultans</h1>
             <p className="mt-6 max-w-2xl font-display text-sm leading-7 text-foreground sm:text-lg">
               999 Sultans arriving on ARC. Claim your throne before the gates close.
             </p>
@@ -161,7 +161,7 @@ function Index() {
           <section key="whitelist" className="state-enter mx-auto flex w-full max-w-xl items-center justify-center">
             <div className="w-full max-w-md border-4 border-secondary bg-card pixel-shadow">
               <header className="border-b-4 border-secondary bg-muted px-4 py-3 text-center">
-                <h1 className="font-display text-2xl font-extrabold text-accent sm:text-3xl">ARCSultans</h1>
+                <h1 className="brand-title text-2xl sm:text-3xl">ARCSultans</h1>
                 <div className="mt-2 flex items-center justify-center gap-3 font-display text-[8px] text-muted-foreground sm:gap-6 sm:text-[9px]">
                    <span>SUPPLY: 999</span>
                   <span className="text-primary [animation:arcade-blink_1.2s_steps(1)_infinite]">WHITELIST LIVE</span>
@@ -257,7 +257,7 @@ function Index() {
       <footer className="relative z-20 w-full shrink-0 border-t-2 border-footer-border bg-footer-surface font-display text-footer-copy">
         <div className="mx-auto grid w-full max-w-[1536px] gap-x-8 gap-y-5 px-5 py-5 sm:px-8 lg:grid-cols-[minmax(190px,1fr)_minmax(360px,2fr)_auto] lg:items-center lg:px-10 lg:py-4">
           <div className="min-w-0">
-            <p className="truncate text-xl font-extrabold leading-none text-footer-title sm:text-2xl">ARCSultans</p>
+            <p className="brand-title truncate text-xl leading-none sm:text-2xl">ARCSultans</p>
             <p className="mt-2 text-[9px] leading-4 text-footer-copy sm:text-[10px]">Mint 16 September 2026 · Arc network</p>
           </div>
 
