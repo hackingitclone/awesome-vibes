@@ -11,6 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { WhitelistForm } from "@/components/WhitelistForm";
+import whitelistBanner from "@/assets/banner-stretched.svg.asset.json";
 import homepageBackground from "@/assets/homepage-2.png.asset.json";
 import nft1 from "@/assets/nft-1.jpg";
 import nft2 from "@/assets/nft-2.jpg";
@@ -21,6 +22,14 @@ import nft6 from "@/assets/nft-6.jpg";
 const SLIDES = [nft1, nft2, nft3, nft4, nft5, nft6];
 
 const HOME_BACKGROUND = homepageBackground.url;
+const WHITELIST_BUTTON_BACKGROUND = {
+  backgroundColor: "transparent",
+  backgroundImage: `url(${whitelistBanner.url})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "100% 100%",
+  imageRendering: "pixelated",
+} as const;
 const WHITELIST_BACKGROUND =
   "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/whitelistpage.png";
 
@@ -152,6 +161,7 @@ function Index() {
             <Button
               size="lg"
               onClick={() => setView("whitelist")}
+              style={WHITELIST_BUTTON_BACKGROUND}
               className="group mt-5 h-14 w-full max-w-sm border-4 border-footer-title bg-primary px-3 font-display text-sm font-bold text-footer-title shadow-[0_5px_0_var(--secondary),0_0_14px_color-mix(in_oklab,var(--footer-title)_30%,transparent)] hover:bg-primary/90 active:translate-y-1 active:shadow-[0_1px_0_var(--secondary)] sm:h-16 sm:text-lg"
             >
               <span aria-hidden className="mr-5 text-base transition-transform group-hover:rotate-45">✦</span>
@@ -189,6 +199,7 @@ function Index() {
                   <DialogTrigger asChild>
                     <Button
                       size="lg"
+                      style={WHITELIST_BUTTON_BACKGROUND}
                       className="mt-4 h-12 w-full max-w-52 border-0 border-b-8 border-secondary bg-primary px-4 font-display text-xs font-bold text-primary-foreground shadow-none hover:bg-primary/90 active:translate-y-2 active:border-b-0 sm:text-sm"
                     >
                       ENTER WHITELIST
