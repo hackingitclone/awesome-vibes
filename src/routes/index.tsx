@@ -11,7 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { WhitelistForm } from "@/components/WhitelistForm";
-import whitelistBanner from "@/assets/banner-stretched.svg.asset.json";
+import buttonBackground from "@/assets/button-4k.png.asset.json";
 import homepageBackground from "@/assets/homepage-2.png.asset.json";
 import nft1 from "@/assets/nft-1.jpg";
 import nft2 from "@/assets/nft-2.jpg";
@@ -24,7 +24,7 @@ const SLIDES = [nft1, nft2, nft3, nft4, nft5, nft6];
 const HOME_BACKGROUND = homepageBackground.url;
 const WHITELIST_BUTTON_BACKGROUND = {
   backgroundColor: "transparent",
-  backgroundImage: `url(${whitelistBanner.url})`,
+  backgroundImage: `url(${buttonBackground.url})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
@@ -165,7 +165,7 @@ function Index() {
               className="group mt-5 h-9 w-full max-w-[250px] border-0 bg-primary px-2 font-display text-xs font-bold text-footer-title shadow-none hover:bg-primary/90 sm:h-10 sm:text-sm"
             >
               <span aria-hidden className="mr-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
-              Enter Whitelist
+              CLAIM YOUR THRONE
               <span aria-hidden className="ml-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
             </Button>
           </section>
@@ -202,7 +202,7 @@ function Index() {
                       style={WHITELIST_BUTTON_BACKGROUND}
                       className="mt-4 h-8 w-full max-w-[150px] border-0 bg-primary px-2 font-display text-[10px] font-bold text-primary-foreground shadow-none hover:bg-primary/90 sm:text-xs"
                     >
-                      ENTER WHITELIST
+                      CLAIM YOUR THRONE
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-h-[92vh] overflow-y-auto border-4 border-accent bg-popover p-5 pixel-shadow sm:max-w-md sm:rounded-none sm:p-7">
