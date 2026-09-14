@@ -162,11 +162,9 @@ function Index() {
               size="lg"
               onClick={() => setView("whitelist")}
               style={WHITELIST_BUTTON_BACKGROUND}
-              className="group mt-5 h-9 w-full max-w-[250px] border-0 bg-primary px-2 font-display text-xs font-bold text-footer-title shadow-none hover:bg-primary/90 sm:h-10 sm:text-sm"
+              className="mt-5 h-9 w-full max-w-[250px] border-0 bg-primary px-2 font-display text-[10px] font-bold text-footer-title shadow-none hover:bg-primary/90 sm:h-10 sm:text-xs"
             >
-              <span aria-hidden className="mr-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
               CLAIM YOUR THRONE
-              <span aria-hidden className="ml-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
             </Button>
           </section>
         ) : view === "whitelist" ? (
@@ -200,7 +198,7 @@ function Index() {
                     <Button
                       size="lg"
                       style={WHITELIST_BUTTON_BACKGROUND}
-                      className="mt-4 h-8 w-full max-w-[150px] border-0 bg-primary px-2 font-display text-[10px] font-bold text-primary-foreground shadow-none hover:bg-primary/90 sm:text-xs"
+                      className="mt-4 h-8 w-full max-w-[150px] border-0 bg-primary px-2 font-display text-[9px] font-bold text-primary-foreground shadow-none hover:bg-primary/90 sm:text-[10px]"
                     >
                       CLAIM YOUR THRONE
                     </Button>
