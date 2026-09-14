@@ -24,7 +24,7 @@ const SLIDES = [nft1, nft2, nft3, nft4, nft5, nft6];
 const HOME_BACKGROUND = homepageBackground.url;
 const WHITELIST_BUTTON_BACKGROUND = {
   backgroundColor: "transparent",
-  backgroundImage: `url(${whitelistBanner.url})`,
+  backgroundImage: `url(${buttonBackground.url})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
