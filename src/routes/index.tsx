@@ -68,13 +68,18 @@ function StateBackground({ isWhitelist }: { isWhitelist: boolean }) {
   );
 }
 
-function SideGifPreview({ backdrop, gif, slot }: { backdrop: string; gif: string; slot: number }) {
+function SideGifPreview({ gif, slot }: { gif: string; slot: number }) {
   return (
-    <div className={`crt-screen border-4 border-secondary p-1.5 pixel-shadow ${backdrop}`}>
+    <div className="relative h-24 w-24">
       <img
         src={gif}
         alt={`Animated ARCSultans NFT preview ${slot + 1}`}
-        className="aspect-square w-full object-cover mix-blend-multiply [image-rendering:pixelated]"
+        className="absolute inset-0 h-full w-full object-cover [image-rendering:pixelated]"
+      />
+      <img
+        src={FOUR_FRAMES}
+        alt=""
+        className="absolute inset-0 h-full w-full object-contain [image-rendering:pixelated]"
       />
     </div>
   );
