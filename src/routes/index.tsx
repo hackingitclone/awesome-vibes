@@ -79,7 +79,7 @@ function SideGifPreview({ gif, slot }: { gif: string; slot: number }) {
       <img
         src={FOUR_FRAMES}
         alt=""
-        className="absolute left-1/2 top-1/2 h-[115%] w-[115%] -translate-x-1/2 -translate-y-1/2 object-contain [image-rendering:pixelated]"
+        className="absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2 object-contain [image-rendering:pixelated]"
       />
     </div>
   );
