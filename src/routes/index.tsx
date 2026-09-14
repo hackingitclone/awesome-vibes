@@ -16,6 +16,7 @@ import fourframesImage from "@/assets/fourframes.png.asset.json";
 import homepageBackground from "@/assets/homepage.png.asset.json";
 import homeFrontTextImage from "@/assets/home-fronttext.png.asset.json";
 import footerBrandImage from "@/assets/ARCSULTANSfootertext.png.asset.json";
+import mainframeImage from "@/assets/mainframe.png.asset.json";
 import nft1 from "@/assets/nft-1.jpg";
 import nft2 from "@/assets/nft-2.jpg";
 import nft3 from "@/assets/nft-3.jpg";
@@ -37,6 +38,7 @@ const WHITELIST_BACKGROUND =
   "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/whitelistpage.png";
 
 const CENTER_PREVIEW = "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_mixed_100.gif";
+const MAIN_FRAME = mainframeImage.url;
 const FOUR_FRAMES = fourframesImage.url;
 
 const SIDE_FRAMES = [
@@ -194,11 +196,16 @@ function Index() {
               </header>
 
               <div className="flex flex-col items-center px-4 py-4">
-                <div className="crt-screen relative w-full max-w-52 border-4 border-accent bg-background p-2">
+                <div className="crt-screen relative w-full max-w-52 overflow-hidden">
                   <img
                     src={CENTER_PREVIEW}
                     alt="Animated ARCSultans NFT collection preview"
                     className="aspect-square w-full object-cover [image-rendering:pixelated]"
+                  />
+                  <img
+                    src={MAIN_FRAME}
+                    alt=""
+                    className="absolute left-1/2 top-1/2 h-[250%] w-[250%] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain [image-rendering:pixelated]"
                   />
                   <span className="absolute left-2 top-2 z-20 bg-background px-1.5 py-0.5 font-display text-[7px] text-accent">LIVE PREVIEW</span>
                 </div>
