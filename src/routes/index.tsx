@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dialog";
 import { WhitelistForm } from "@/components/WhitelistForm";
 import buttonBackground from "@/assets/button-4k.png.asset.json";
+import fourframesImage from "@/assets/fourframes.png.asset.json";
 import homepageBackground from "@/assets/homepage.png.asset.json";
 import homeFrontTextImage from "@/assets/home-fronttext.png.asset.json";
 import footerBrandImage from "@/assets/ARCSULTANSfootertext.png.asset.json";
@@ -36,12 +37,13 @@ const WHITELIST_BACKGROUND =
   "https://raw.githubusercontent.com/0xDarkSeidBull/TheSaudisARC/main/backgroundstory/whitelistpage.png";
 
 const CENTER_PREVIEW = "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_mixed_100.gif";
+const FOUR_FRAMES = fourframesImage.url;
 
 const SIDE_FRAMES = [
-  { backdrop: "nft-backdrop-ivory", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_arc_backgound_100.gif" },
-  { backdrop: "nft-backdrop-slate", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_magma_burst_100.gif" },
-  { backdrop: "nft-backdrop-sky", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_sky_blue_100.gif" },
-  { backdrop: "nft-backdrop-sand", gif: "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_slate_gray_100.gif" },
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_arc_backgound_100.gif",
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_magma_burst_100.gif",
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_sky_blue_100.gif",
+  "https://cdn.jsdelivr.net/gh/0xDarkSeidBull/TheSaudisARC@main/layers/arcsultans_solid_slate_gray_100.gif",
 ] as const;
 
 function StateBackground({ isWhitelist }: { isWhitelist: boolean }) {
@@ -66,13 +68,18 @@ function StateBackground({ isWhitelist }: { isWhitelist: boolean }) {
   );
 }
 
-function SideGifPreview({ backdrop, gif, slot }: { backdrop: string; gif: string; slot: number }) {
+function SideGifPreview({ gif, slot }: { gif: string; slot: number }) {
   return (
-    <div className={`crt-screen border-4 border-secondary p-1.5 pixel-shadow ${backdrop}`}>
+    <div className="relative h-24 w-24">
       <img
         src={gif}
         alt={`Animated ARCSultans NFT preview ${slot + 1}`}
-        className="aspect-square w-full object-cover mix-blend-multiply [image-rendering:pixelated]"
+        className="absolute inset-0 h-full w-full object-cover [image-rendering:pixelated]"
+      />
+      <img
+        src={FOUR_FRAMES}
+        alt=""
+        className="absolute inset-0 h-full w-full object-contain [image-rendering:pixelated]"
       />
     </div>
   );
@@ -138,16 +145,16 @@ function Index() {
       {isWhitelist && (
         <>
           <div className="fixed left-40 top-20 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[0].backdrop} gif={SIDE_FRAMES[0].gif} slot={0} />
+            <SideGifPreview gif={SIDE_FRAMES[0]} slot={0} />
           </div>
           <div className="fixed bottom-32 left-40 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[1].backdrop} gif={SIDE_FRAMES[1].gif} slot={1} />
+            <SideGifPreview gif={SIDE_FRAMES[1]} slot={1} />
           </div>
           <div className="fixed right-40 top-20 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[2].backdrop} gif={SIDE_FRAMES[2].gif} slot={2} />
+            <SideGifPreview gif={SIDE_FRAMES[2]} slot={2} />
           </div>
           <div className="fixed bottom-32 right-40 z-10 hidden h-24 w-24 lg:block">
-            <SideGifPreview backdrop={SIDE_FRAMES[3].backdrop} gif={SIDE_FRAMES[3].gif} slot={3} />
+            <SideGifPreview gif={SIDE_FRAMES[3]} slot={3} />
           </div>
         </>
       )}
