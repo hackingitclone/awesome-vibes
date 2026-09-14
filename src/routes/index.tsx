@@ -162,11 +162,11 @@ function Index() {
               size="lg"
               onClick={() => setView("whitelist")}
               style={WHITELIST_BUTTON_BACKGROUND}
-              className="group mt-5 h-14 w-full max-w-sm border-4 border-footer-title bg-primary px-3 font-display text-sm font-bold text-footer-title shadow-[0_5px_0_var(--secondary),0_0_14px_color-mix(in_oklab,var(--footer-title)_30%,transparent)] hover:bg-primary/90 active:translate-y-1 active:shadow-[0_1px_0_var(--secondary)] sm:h-16 sm:text-lg"
+              className="group mt-5 h-9 w-full max-w-[250px] border-0 bg-primary px-2 font-display text-xs font-bold text-footer-title shadow-none hover:bg-primary/90 sm:h-10 sm:text-sm"
             >
-              <span aria-hidden className="mr-5 text-base transition-transform group-hover:rotate-45">✦</span>
+              <span aria-hidden className="mr-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
               Enter Whitelist
-              <span aria-hidden className="ml-5 text-base transition-transform group-hover:rotate-45">✦</span>
+              <span aria-hidden className="ml-2.5 text-xs transition-transform group-hover:rotate-45">✦</span>
             </Button>
           </section>
         ) : view === "whitelist" ? (
@@ -200,7 +200,7 @@ function Index() {
                     <Button
                       size="lg"
                       style={WHITELIST_BUTTON_BACKGROUND}
-                      className="mt-4 h-12 w-full max-w-52 border-0 border-b-8 border-secondary bg-primary px-4 font-display text-xs font-bold text-primary-foreground shadow-none hover:bg-primary/90 active:translate-y-2 active:border-b-0 sm:text-sm"
+                      className="mt-4 h-8 w-full max-w-[150px] border-0 bg-primary px-2 font-display text-[10px] font-bold text-primary-foreground shadow-none hover:bg-primary/90 sm:text-xs"
                     >
                       ENTER WHITELIST
                     </Button>
