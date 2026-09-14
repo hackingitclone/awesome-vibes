@@ -202,7 +202,7 @@ function Index() {
                       style={WHITELIST_BUTTON_BACKGROUND}
                       className="mt-4 h-8 w-full max-w-[150px] border-0 bg-primary px-2 font-display text-[10px] font-bold text-primary-foreground shadow-none hover:bg-primary/90 sm:text-xs"
                     >
-                      ENTER WHITELIST
+                      CLAIM YOUR THRONE
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-h-[92vh] overflow-y-auto border-4 border-accent bg-popover p-5 pixel-shadow sm:max-w-md sm:rounded-none sm:p-7">
